@@ -4,10 +4,21 @@
 <title>Bw1111</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/themes/light.css" />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/shoelace-autoloader.js"></script>
-
+<style>
+  p {
+  content: "";
+  display: block;
+  width: 32px;
+  padding-top: 3px;
+  border-bottom: 2px solid #f9dd94;
+}
+  body{ 
+	font-family: Arial, Helvetica, sans-serif; 
+}   
+</style>
 </head>
 <body>
-
+<p>test!</p>
 <sl-dialog label="Hello!" class="dialog-overview" id="dlg" no-header=true>
   <h1>Notice</h1>
   <br>
@@ -21,7 +32,7 @@ setTimeout(function() {
     dlg.show();
     dlg.addEventListener('sl-request-close', event => {
     if (event.detail.source === 'overlay') {
-      event.preventDefault();
+   //   event.preventDefault();
     }
   });
     },250)
