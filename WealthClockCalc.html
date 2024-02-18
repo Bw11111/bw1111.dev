@@ -18,8 +18,8 @@ width: 60px;
   <body>
 
 <h2>I will be afk for <input class='intext' id="hrs"> hours, and earn <input class="intext" disabled text="" id="result"></h2>
-    <script>
-    
+    <script type="module">
+    		import CountUp
 		document.getElementById("hrs").addEventListener("input", (event) => {
         var res = document.getElementById("result");
         var hrs = document.getElementById("hrs").value;
@@ -41,7 +41,7 @@ width: 60px;
           
           
         }
-        var numAnim = new countUp.CountUp('result', tickets);
+        var numAnim = new CountUp('result', tickets);
     });
     
     </script>
