@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
 <title>Wealth Clock Calc</title>
-<script src="https://raw.githubusercontent.com/inorganik/countUp.js/master/dist/countUp.umd.js"></script>
+<script type="module" src="https://raw.githubusercontent.com/inorganik/countUp.js/master/dist/countUp.umd.js"></script>
 <style>
 .intext {
 width: 60px;
@@ -15,7 +15,7 @@ width: 60px;
   <body>
 
 <h2>I will be afk for <input class='intext' id="hrs"> hours, and earn <input class="intext" disabled text="" id="result"></h2>
-    <script type="module">
+    <script>
     
 		document.getElementById("hrs").addEventListener("input", (event) => {
         var res = document.getElementById("result");
