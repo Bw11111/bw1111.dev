@@ -4,11 +4,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"></script>
 <title>Wealth Clock Calc</title>
+<script src="https://raw.githubusercontent.com/inorganik/countUp.js/master/dist/countUp.umd.js"></script>
+<style>
+.intext {
+width: 60px;
+}
+</style>
   </head>
 
   <body>
 
-<h2>I will be afk for <sl-input></sl-input>days</h2>
+<h2>I will be afk for <input class='intext' id="hrs"> hours, and earn <input class="intext" disabled text="" id="result"></h2>
+    <script type="module">
     
+		document.getElementById("hrs").addEventListener("input", (event) => {
+        var res = document.getElementById("result");
+        var hrs = document.getElementById("hrs").value;
+        hrs = parseInt(hrs);
+        console.log(hrs);
+        var tickets = 0;
+        
+        while(hrs > 0) {
+          if(hrs>5){
+            tickets+=5;
+            
+          }else{
+              tickets+=hrs;
+            }
+          
+          hrs--;
+          
+          res.value = tickets;
+          
+          
+        }
+        var numAnim = new countUp.CountUp('result', tickets);
+    });
+    
+    </script>
+    <script src="https://raw.githubusercontent.com/inorganik/countUp.js/master/dist/countUp.min.js"></script>
   </body>
+  <script>
+    
+  </script>
 </html>
