@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSharp Studio</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.features {
+    padding: 2em 0;
+    background-color: white;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 1em;
+}
+
+.about {
+    padding: 2em;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.contact {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin-top: 1em;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+a {
+text-decoration:none;
+color:white;
+}
+button {
+    display: inline-block;
+    padding: 2em 0;
+
+    width: auto;
+    padding: 0.75em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">CSharp Studio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CSharp Studio</h1>
+            <p>Your Ultimate Solution for Modern C# Development</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Advanced Code Editing</h3>
+                <p>Edit and write C# with a level of power not seen before in a free code editor.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Saving</h3>
+                <p>CSharp Studio lets you save your projects for later.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Small and Portable</h3>
+                <p>CSharp Studio is extremely small, allowing for installation on any device.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>CSharp Studio is dedicated to providing top-notch tools for C# developers, helping you to build better applications faster.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Download</h2>
+       
+            <button><a href="https://github.com/Bw11111/files/raw/main/CSharp%20Studio%20Installer.msi" download>What are you waiting for? Download now!</a></button>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CSharp Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
